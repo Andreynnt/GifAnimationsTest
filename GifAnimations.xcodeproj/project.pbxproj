@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17B15D86BC65498F77588E17 /* Pods_GifAnimations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 930BC9ACFCC6CC88CA00372B /* Pods_GifAnimations.framework */; };
 		C8FC1A3E2600EB8000A5656F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FC1A3D2600EB8000A5656F /* AppDelegate.swift */; };
 		C8FC1A402600EB8000A5656F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FC1A3F2600EB8000A5656F /* SceneDelegate.swift */; };
 		C8FC1A422600EB8000A5656F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8FC1A412600EB8000A5656F /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4437767A5F9D05535FC2FD23 /* Pods-GifAnimations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GifAnimations.debug.xcconfig"; path = "Target Support Files/Pods-GifAnimations/Pods-GifAnimations.debug.xcconfig"; sourceTree = "<group>"; };
+		930BC9ACFCC6CC88CA00372B /* Pods_GifAnimations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GifAnimations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8FC1A3A2600EB8000A5656F /* GifAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GifAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8FC1A3D2600EB8000A5656F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8FC1A3F2600EB8000A5656F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		C8FC1A462600EB8300A5656F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8FC1A492600EB8300A5656F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8FC1A4B2600EB8300A5656F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E26BA514DEA4A68977764217 /* Pods-GifAnimations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GifAnimations.release.xcconfig"; path = "Target Support Files/Pods-GifAnimations/Pods-GifAnimations.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17B15D86BC65498F77588E17 /* Pods_GifAnimations.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04BF4AB7B6172CA11E88902D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				930BC9ACFCC6CC88CA00372B /* Pods_GifAnimations.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C580330AF47EAF8EA31E982 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4437767A5F9D05535FC2FD23 /* Pods-GifAnimations.debug.xcconfig */,
+				E26BA514DEA4A68977764217 /* Pods-GifAnimations.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C8FC1A312600EB8000A5656F = {
 			isa = PBXGroup;
 			children = (
 				C8FC1A3C2600EB8000A5656F /* GifAnimations */,
 				C8FC1A3B2600EB8000A5656F /* Products */,
+				3C580330AF47EAF8EA31E982 /* Pods */,
+				04BF4AB7B6172CA11E88902D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8FC1A4E2600EB8300A5656F /* Build configuration list for PBXNativeTarget "GifAnimations" */;
 			buildPhases = (
+				F0CDB623F383735D6C68A68C /* [CP] Check Pods Manifest.lock */,
 				C8FC1A362600EB8000A5656F /* Sources */,
 				C8FC1A372600EB8000A5656F /* Frameworks */,
 				C8FC1A382600EB8000A5656F /* Resources */,
+				25743CB3AA00DD85D32CC341 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25743CB3AA00DD85D32CC341 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GifAnimations/Pods-GifAnimations-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GifAnimations/Pods-GifAnimations-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GifAnimations/Pods-GifAnimations-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0CDB623F383735D6C68A68C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GifAnimations-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C8FC1A362600EB8000A5656F /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		C8FC1A4F2600EB8300A5656F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4437767A5F9D05535FC2FD23 /* Pods-GifAnimations.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		C8FC1A502600EB8300A5656F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E26BA514DEA4A68977764217 /* Pods-GifAnimations.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
